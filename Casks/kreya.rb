@@ -9,4 +9,6 @@ cask "kreya" do
     desc "GUI Client for interacting with gRPC services"
     homepage "https://kreya.app/"
 
+    app "Kreya.app"
+
 end
