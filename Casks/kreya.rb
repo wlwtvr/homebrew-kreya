@@ -9,6 +9,14 @@ cask "kreya" do
     desc "GUI Client for interacting with gRPC services"
     homepage "https://kreya.app/"
 
+    livecheck do
+        url "https://stable-downloads.kreya.app/Kreya-osx-#{arch}-zip-checksum-sha256.txt"
+        regex(/(\b[0-9a-f]{64}\b)/)
+        strategy :page_match
+    end
+
+    auto_updates true
+
     app "Kreya.app"
 
 end
